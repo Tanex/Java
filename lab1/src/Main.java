@@ -1,7 +1,9 @@
 import dataobjects.*;
 
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Teacher teacher1 = new Teacher("Tage", "Berntsson", 1234567890, "Apor är inte blåa", "godis är sött");
         Student student1 = new Student("Kalle", "Jansson", 135498763, "kakor är mums");
 
@@ -19,6 +21,20 @@ public class Main {
         //student1.learn("as");
 
         //(new Person("a", "a", 1, "a")).learn("a");
+    }*/
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        while(true){
+            System.out.print("Width:");
+            int width = in.nextInt();
+            System.out.print("Height:");
+            int height = in.nextInt();
+            System.out.print("hex:");
+            int hex = in.nextInt();
+            System.out.println();
+            HexGrid.calcGridValues(width, height, hex);
+            System.out.printf("");
+        }
     }
 }
 
